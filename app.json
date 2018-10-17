@@ -1,0 +1,21 @@
+{
+  "name": "GitHub News Feed Filter",
+  "description": "Remove entries with specific keywords from the GitHub news feed.",
+  "repository": "https://github.com/bcylin/github-newsfeed-filter",
+  "keywords": ["github", "feed", "rss", "filter"],
+  "website": "https://github.com/bcylin/github-newsfeed-filter",
+  "env": {
+    "RSS_URL": {
+      "description": "Your GitHub news feed URL.",
+      "required": true
+    },
+    "REMOVE_KEYWORDS": {
+      "description": "Comma separated keywords in entry links to remove from the feed.",
+      "required": true
+    },
+    "SECRET": {
+      "description": "Optional: a parameter to keep your feed secret.",
+      "required": false
+    }
+  }
+}
