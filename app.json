@@ -17,5 +17,10 @@
       "description": "Optional: a parameter to keep your feed secret.",
       "required": false
     }
-  }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/bundler/heroku-buildpack-bundler2"
+    }
+  ]
 }
