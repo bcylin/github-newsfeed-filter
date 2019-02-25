@@ -26,17 +26,15 @@ get "/rss.atom" do
   keywords = ENV["REMOVE_KEYWORDS"].split ","
 
   contents = Net::HTTP.get rss
-  xml = Nokogiri::XML contents
+  nodes = Nokogiri::XML contents
 
-  xml.css("entry")
+  nodes.css("entry")
     .select { |node|
       url = node.css("link").first["href"]
       keywords.any? { |keyword| url.include? keyword }
     }
-    .each { |node|
-      node.remove
-    }
+    .each(&:remove)
 
   content_type "application/atom+xml; charset=utf-8"
-  xml.to_xml.gsub /^\s+\n/, ""
+  nodes.to_xml.gsub /^\s+\n/, "" # remove empty lines
 end
