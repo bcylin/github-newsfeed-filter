@@ -37,5 +37,8 @@ DEPENDENCIES
   shotgun
   sinatra
 
+RUBY VERSION
+   ruby 2.7.4p191
+
 BUNDLED WITH
-   2.0.1
+   2.2.23
