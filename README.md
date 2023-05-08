@@ -34,15 +34,9 @@ ruby app.rb -s Puma
 
 ## Deployment Example
 
-* Clone the project
-* Install [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install)
-* Follow the steps in [Deploying with Git](https://devcenter.heroku.com/articles/git)
-
-### Deploy using the template
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/bcylin/github-newsfeed-filter)
-
-Then use `https://#{app-name}.herokuapp.com/rss.atom` instead of the GitHub news feed URL in your RSS reader.
+* Fork the repo
+* Follow the steps to [Create a new Blueprint Instance](https://render.com/deploy)
+* Use `https://#{app-name}.onrender.com/rss.atom` instead of the GitHub news feed URL
 
 ## License
 
