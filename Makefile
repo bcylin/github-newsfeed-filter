@@ -1,2 +1,2 @@
 run:
-	open http://localhost:9393/rss.atom && shotgun app.rb
+	open http://localhost:4567/rss.atom && ruby app.rb -s Puma

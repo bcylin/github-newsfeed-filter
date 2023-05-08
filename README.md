@@ -28,8 +28,8 @@ REMOVE_KEYWORDS=<keyword1>,<keyword2>
 Run the app locally:
 
 ```sh
-shotgun app.rb
-# open http://localhost:9393/rss.atom
+ruby app.rb -s Puma
+# open http://localhost:4567/rss.atom
 ```
 
 ## Deployment Example
